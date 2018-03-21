@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="keywords" content="汽车,数据查询">
+		<meta name="robots" content="all">
+		<meta name="description" content="汽车零配件数据查询">
+		<title>MACC-保养周期查询</title>
+		<link rel="icon" href="../../image/logohead.jpg">
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/loading.css">
+		<link rel="stylesheet" type="text/css" href="./css/cycle.css">
+
+		<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+		<style>
+			.handbookright tr:hover{
+				background: #eaeaea;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!------头部------>
+		<div class="nav clearfix">
+			<div class="nav_left nleft wxcont">
+				<a href="../../index.html">网站首页</a>&nbsp;&nbsp;
+				<a href="#" class="wxfa">关注微信
+					<img class="wxtop" src="../../image/wx.jpg">
+				</a>&nbsp;&nbsp;
+
+			</div>
+			<div class="nav_right nright clearfix">
+				<div>
+					<a href="#" class="divname"><span></span></a>&nbsp;
+					<a href="#" class="divnum">日剩余次数（<span></span>）</a>&nbsp;
+					<a href="../about/in.html">免责条款</a>&nbsp;
+				</div>
+			</div>
+		</div>
+		<div id="loading" style="display: none;">
+			<p>
+				<img src="../../image/timg.gif">
+			</p>
+		</div>
+		<div class='cont'>
+			<div class="content clearfix">
+				<p>
+					<a href="javascript:history.back();">返回上一页</a>
+					<a href="../../index.html">首页</a>
+				</p>
+
+				<div class="year">请选择上路年份</div>
+				<div class="mouth">请选择上路月份</div>
+				<div class="distance">请选择行驶里程</div>
+				<button class="contentbtn">查 询</button>
+				<ul class="chooseyear active">
+
+				</ul>
+				<ul class="choosemouth1 active">
+					<li>1月</li>
+					<li>2月</li>
+					<li>3月</li>
+					<li>4月</li>
+					<li>5月</li>
+					<li>6月</li>
+					<li>7月</li>
+					<li>8月</li>
+					<li>9月</li>
+					<li>10月</li>
+					<li>11月</li>
+					<li>12月</li>
+				</ul>
+				<ul class="choosemouth2 active">
+					<li>1月</li>
+					<li>2月</li>
+					<li>3月</li>
+					<li>4月</li>
+					<li>5月</li>
+					<li>6月</li>
+					<li>7月</li>
+					<li>8月</li>
+					<li>9月</li>
+				</ul>
+				<ul class="choosedistance active">
+
+				</ul>
+			</div>
+
+			<div class="cycle" style="display: none;">
+				<p class="contentp">建议更换的配件：</p>
+				<div class="cyclecontent clearfix">
+					<div class="cyclediv">
+						<img src="../../image/blank.jpg">
+						<span class="cyclespan">空气滤清器</span>
+						<span>OE号码：123123awd1212</span>
+					</div>
+				</div>
+				<div class='price'>
+					参考价格：<span></span>
+				</div>
+			</div>
+
+			<div class="handbook clearfix" style="display: none;">
+				<p>保养手册：</p>
+				<div class="handbookleft">
+					<table>
+						<tr>
+							<td>行驶里程</td>
+						</tr>
+						<tr>
+							<td>机油</td>
+						</tr>
+						<tr>
+							<td>机油滤清器</td>
+						</tr>
+						<tr>
+							<td>空气滤清器</td>
+						</tr>
+						<tr>
+							<td>空调滤清器</td>
+						</tr>
+						<tr>
+							<td>燃油滤清器</td>
+						</tr>
+						<tr>
+							<td>制动液</td>
+						</tr>
+						<tr>
+							<td>变速箱油</td>
+						</tr>
+						<tr>
+							<td>火花塞</td>
+						</tr>
+						<tr>
+							<td>防冻液</td>
+						</tr>
+						<tr>
+							<td>汽油添加剂</td>
+						</tr>
+					</table>
+				</div>
+				<div class="handbookright">
+					<table>
+						<tr class='tr handbookrighttd'></tr>
+						<tr class='tr0'></tr>
+						<tr class='tr1'></tr>
+						<tr class='tr2'></tr>
+						<tr class='tr3'></tr>
+						<tr class='tr4'></tr>
+						<tr class='tr5'></tr>
+						<tr class='tr6'></tr>
+						<tr class='tr7'></tr>
+						<tr class='tr8'></tr>
+						<tr class='tr9'></tr>
+					</table>
+				</div>
+			</div>
+
+			<div class="cyclenone">
+				<p>建议更换的配件：</p>
+				暂无数据
+			</div>
+			<div class="contentnone">
+				<p>保养手册：</p>
+				暂无数据
+			</div>
+		</div>
+		<center>
+				<p style="color:#b20822">（备注：以上数据来源于官方保养手册，仅供参考）</p>
+		</center>
+		<div class="footer">
+			<p><span>电话：021-5221 2966</span>|<span>传真：021-5221 2911</span>|<span>备案号：沪ICP备15027426号-2</span>|</p>
+			<p><span>地址：上海市闵行区沪光东路89号福克斯大厦2号楼103B</span></p>
+			<p><span>版权所有：昂美数据</span></script>
+			</p>
+		</div>
+
+	</body>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery.cookie.js"></script>
+	<script src="./js/cycle.js"></script>
+	<script>
+		function stopPropagation(e) { 
+			if (e.stopPropagation) 
+				e.stopPropagation(); 
+			else {
+				e.cancelBubble = true; 
+			}
+		}
+		$(document).bind('click',function(){ 
+			$('.chooseyear').addClass('active');
+			$('.choosemouth1').addClass('active');
+			$('.choosemouth2').addClass('active');
+			$('.choosedistance').addClass('active');
+		}); 
+		$('.content').bind('click',function(e){ 
+			stopPropagation(e); 
+		}); 
+	</script>
+	<script src="../../js/edition.js"></script>
+	<!-- <script src="../../js/cnzz.js"></script> -->
+
+</html>

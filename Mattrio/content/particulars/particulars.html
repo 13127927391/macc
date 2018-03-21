@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="keywords" content="51macc,mattrio,昂美贸易">
+		<meta name="robots" content="all">
+		<meta name="description" content="汽车零配件数据查询">
+		<title>MACC-车型详情</title>
+		<link rel="icon" href="../../image/logohead.jpg">
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/loading.css">
+		<link rel="stylesheet" type="text/css" href="../../css/suggest.css">
+		<link rel="stylesheet" type="text/css" href="./css/particulars.css">
+		<script src="../../js/cnzz.js"></script>
+		<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+
+	<body>
+		<!------头部------>
+		<div class="nav clearfix">
+			<div class="nav_left nleft wxcont">
+				<a href="../../index.html">网站首页</a>&nbsp;&nbsp;
+				<a href="#" class="wxfa">关注微信
+					<img class="wxtop" src="../../image/wx.jpg">
+				</a>&nbsp;&nbsp;
+			</div>
+			<div class="nav_right nright clearfix">
+				<div>
+					<a href="#" class="divname"><span></span></a>&nbsp;
+					<a href="#" class="divnum">日剩余次数（<span></span>）</a>&nbsp;
+					<a href="../about/in.html">免责条款</a>&nbsp;
+				</div>
+			</div>
+		</div>
+		<div id="loading">
+			<p>
+				<img src="../../image/timg.gif">
+			</p>
+		</div>
+		<!------>
+		<div class="content">
+			<div class="contentleft">
+				<img src="../../image/logo.png">
+			</div>
+			<div class="wrapper">
+				<input class="inputbox" type="text" name="search" id="search" placeholder="请输入您要查询的VIN号码" list="vinlist">
+				<button class="buttom" id="btn">搜 索</button>
+				<datalist id="vinlist">
+				</datalist>
+			</div>
+			<div class="contentwx">
+				<img src="../../image/wx.jpg">
+				<p>关注微信</p>
+			</div>
+		</div>
+
+		<!---->
+		<div class="cont">
+			<div class="wrap-nav1">
+				<!-- <span class="car-name" id="car-name"> </span>
+				<p class="go_back">返回上一页</p>
+				<button style="background: red;">纠错</button> -->
+			</div>
+			<div class="contheader clearfix">
+				<p class="active">车型概括</p>
+				<p>车身配置</p>
+				<p>外观配置</p>
+				<p>发动机配置</p>
+				<p>变速箱配置</p>
+				<p>轮胎配置</p>
+			</div>
+			<div class="mainhead clearfix">
+				<div class="mainheadimg">
+					<!-- 要遍历图片 -->
+					<!-- <img src="../../image/blank.jpg" alt=""> -->
+				</div>
+				<div class="mainheadtable">
+					<table class="table0">
+						<tr>
+							<th>车型识别码</th>
+							<td></td>
+							<th>主机厂</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>车型</th>
+							<td></td>
+							<th>销售名称</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>年款</th>
+							<td></td>
+							<th>排放标准</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>生产年份</th>
+							<td></td>
+							<th>国产合资进口</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>发动机型号</th>
+							<td></td>
+							<th>进气形式</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>燃油类型</th>
+							<td></td>
+							<th>发动机描述</th>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<th>厂商指导价格</th>
+							<td></td>
+							<th>底盘号</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>车辆类型</th>
+							<td></td>
+							<th>发动机位置</th>
+							<td></td>
+						</tr>
+					</table>
+					<table class="table1">
+						<tr>
+							<th>长(mm)</th>
+							<td></td>
+							<th>宽(mm)</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>高(mm)</th>
+							<td></td>
+							<th>整备质量(Kg)</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>最大载重质量(kg)</th>
+							<td></td>
+							<th>前制动器类型</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>后制动器类型</th>
+							<td></td>
+							<th>前悬挂类型</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>后悬挂类型</th>
+							<td></td>
+							<th>驱动方式</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>车身型式</th>
+							<td></td>
+							<th>行李厢容积(L)</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>油箱容积(L)</th>
+							<td></td>
+							<th>座位数(个)</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>最小离地间隙(mm)</th>
+							<td></td>
+							<th>最小转弯半径</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>离去角</th>
+							<td></td>
+							<th>接近角</th>
+							<td></td>
+						</tr>
+					</table>
+					<table class="table2">
+						<tr>
+							<th>电动天窗</th>
+							<td></td>
+							<th>全景天窗</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>氙气大灯</th>
+							<td></td>
+							<th>前雾灯</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>后雨刷</th>
+							<td></td>
+							<th>空调</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>自动空调</th>
+							<td></td>
+							<th>车门数</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>车篷型式</th>
+							<td></td>
+							<th>车顶型式</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>轴距(mm)</th>
+							<td></td>
+							<th>前轮距(mm)</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>后轮距(mm)</th>
+							<td></td>
+							<th></th>
+							<td></td>
+						</tr>
+					</table>
+					<table class="table3">
+						<tr>
+							<th>发动机特有技术</th>
+							<td></td>
+							<th>驱动方式</th>
+							<td style="width:180px;"></td>
+						</tr>
+						<tr>
+							<th>最大功率转速(rpm)</th>
+							<td></td>
+							<th>最大扭矩转速(rpm)</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>气缸排列形式</th>
+							<td></td>
+							<th>气缸数(个)</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>气缸容积</th>
+							<td></td>
+							<th>每缸气门数(个)</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>缸径</th>
+							<td></td>
+							<th>冷却方式</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>最大马力(Ps)</th>
+							<td></td>
+							<th>最大功率(kW)</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>供油方式</th>
+							<td></td>
+							<th>压缩比</th>
+							<td></td>
+						</tr>
+					</table>
+					<table class="table4">
+						<tr>
+							<th>助力类型</th>
+							<td></td>
+							<th>变速器描述</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>档位数</th>
+							<td></td>
+							<th>变速箱品牌</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>波箱型号</th>
+							<td></td>
+							<th>建议使用油品</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>原厂初装用量</th>
+							<td></td>
+							<th>重力更换推荐用量</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>机器循环清洗更换推荐用量</th>
+							<td></td>
+							<th>变速箱类型</th>
+							<td></td>
+						</tr>
+						<!--  -->
+					</table>
+					<table class="table5">
+						<tr>
+							<th>前轮胎规格</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>后轮胎规格</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>前轮毂规格</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>后轮毂规格</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>轮毂材料</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>备胎规格</th>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="last clearfix" id="btns">
+			</div>
+		</div>
+		<div class="conthide">
+
+		</div>
+
+		<div class="contout">
+			<div class="contepc">
+				<span class="span">×</span>
+				<span class="span1">车型级别：</span>
+				<select class="select1">
+
+				</select>
+				<span class="span2"></span>
+				<select class="select2">
+
+				</select>
+				<br>
+				<button class="contbtn">提交</button>
+				<button class="removebtn">取消</button>
+			</div>
+		</div>
+
+		<!--浮动面板-->
+		<div id="floatPanel">
+			<div class="ctrolPanel">
+				<a class="arrow arrow1" href="#"><img src="../../image/up.png"><span>顶部</span></a>
+				<a class="contact" href="javascript:;"><img src="../../image/fankui.png"><span>反馈</span></a>
+				<a class="qrcode" href="javascript:;"><img src="../../image/wenx.png"><span>微信二维码</span></a>
+				<a class="qrcode1" href="javascript:;"><img src="../../image/qqqun.png"><span>Q群</span></a>
+				<a class="arrow arrow2" href="#"><img src="../../image/down.png"><span>底部</span></a>
+			</div>
+			<div class="popPanel">
+				<div class="popPanel-inner">
+					<div class="qrcodePanel">
+						<img src="../../image/wximg.jpg"><br>
+						<span>扫描二维码关注我为好友</span>
+					</div>
+					<div class="arrowPanel">
+						<div class="arrow01"></div>
+						<div class="arrow02"></div>
+					</div>
+				</div>
+			</div>
+			<div class="popPanel1">
+				<div class="popPanel-inner1">
+					<div class="qrcodePanel1">
+						<img src="../../image/qq.jpg"><br>
+						<span>扫描二维码加群</span>
+					</div>
+					<div class="arrowPanel1">
+						<div class="arrow011"></div>
+						<div class="arrow021"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="suggest">
+			<div class="suggestcont">
+				<p>请告诉我们您的意见和建议，我们会参考您的反馈不断优化我们的产品和服务。</p>
+				<table>
+					<tr>
+						<td>建议意见：</td>
+						<td>
+							<textarea></textarea>
+							<br><span>请详细填写您遇到的问题，我们一定会认真阅读。</span>
+						</td>
+					</tr>
+					<tr>
+						<td>联系人：</td>
+						<td><input type="text" name="" class="user_name"></td>
+					</tr>
+					<tr>
+						<td>联系电话：</td>
+						<td><input type="text" name="" class="user_phone"></td>
+					</tr>
+					<tr style="text-align:center;">
+						<td colspan="2">
+							<button class="offbtn">提交</button>
+							<button class="onbtn">取消</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="error">
+			<div class="errorcont">
+				<h3>产品信息纠错</h3>
+				<table>
+					<tr>
+						<td>VIN：</td>
+						<td><input type="text" name="" disabled="disabled" class="vinnum"></td>
+					</tr>
+					<td>正确车型信息：</td>
+						<td>
+							<textarea></textarea>
+							<br><span>请您填写您认为正确的信息，我们会及时校对。</span>
+						</td>
+					<tr style="text-align: center;">
+						<td colspan="2">
+							<button class="off_btn">提交</button>
+							<button class="on_btn">取消</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p><span>电话：021-5221 2966</span>|<span>传真：021-5221 2911</span>|<span>备案号：沪ICP备15027426号-2</span>|</p>
+			<p><span>地址：上海市闵行区沪光东路89号福克斯大厦2号楼103B</span></p>
+			<p><span>版权所有：昂美数据</span>
+				<script type="text/javascript">
+					var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+					document.write(unescape("%3Cspan id='cnzz_stat_icon_1262355392'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1262355392%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));
+				</script>
+			</p>
+		</div>
+	</body>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery.cookie.js"></script>
+	<script src="../../js/suggest.js"></script>
+	<script type="text/javascript">
+		if(localStorage) {
+			var network = localStorage.getItem("network");
+		} else {
+			var network = $.cookie("network");
+		}
+		
+		//点击其他地方隐藏盒子
+		function stopPropagation(e) {
+			if(e.stopPropagation) {
+				e.stopPropagation();
+			} else {
+				e.cancelBubble = true;
+			}
+		}
+		$(document).bind('click', function() {
+			$('.contout').fadeOut();
+		});
+		$('.contepc').bind('click', function(e) {
+			stopPropagation(e);
+		});
+
+		$(".error").bind('click', function() {
+			$('.error').fadeOut();
+		});
+		$('.errorcont').bind('click', function(e) {
+			stopPropagation(e);
+		});
+
+		//纠错
+		$(".on_btn").click(function(){
+		    $('.error').fadeOut();
+		})
+		$(".off_btn").click(function(){
+			if($(".error textarea").val() == ""){
+				alert("请您填写您认为正确的车型信息");
+				return false;
+			}
+			if (sessionStorage) {
+				var searc = sessionStorage.getItem("searc");
+			}else{
+				var searc = $.cookie("searc");
+			}
+			$.ajax({
+				type:"post",
+				url:network+"/Mattrio/OeProductErrorCorrectionInterface/addErrorCorrection",
+				data:{
+					"part_number":$(".table0 tr:eq(0) td:eq(0)").text(),
+					"user_id":userid,
+					"category_name":"",
+					"type":"VIN信息纠错",
+					"new_part_number":searc+" ： "+$(".error textarea").val(),
+					"brand_name":"",
+					"mikey":$(".table0 tr:eq(0) td:eq(0)").text()
+				},
+				dataType:"json",
+				cache: false,
+				crossDomain: true == !(document.all),
+				success:function(data){
+					alert("纠错成功");
+					$('.error').fadeOut();
+				}
+			})
+			
+		})
+
+		
+
+		//历史记录
+		function autoScroll(obj) {
+			$(obj).find("ul").animate({
+				marginTop: "-56px"
+			}, 1000, 'linear', function() {
+				$(this).css({
+					marginTop: "0px"
+				}).find("li:first").appendTo(this);
+			})
+		}
+		$(function() {
+			setInterval('autoScroll(".apple")', 5000);
+			initDataList('vinlist');
+		})
+		function initDataList(id) {
+			if(localStorage.getItem(id)) {
+				var list = localStorage.getItem(id);
+				list = list.substring(0, list.length - 1);
+				var data = list.split(',');
+				if(data.length >= 10) {
+					for(var i = data.length - 1; i >= data.length - 9; i--) {
+						$('#' + id).append('<option>' + data[i] + '</option>');
+					}
+				} else {
+					for(var i = data.length - 1; i >= 0; i--) {
+						$('#' + id).append('<option>' + data[i] + '</option>');
+					}
+				}
+
+			}
+		}
+	</script>
+
+	<script src="./js/particulars.js"></script>
+	<script src="./js/particulars_vin.js"></script>
+	<script>
+		//获取通过url传的参数
+		function getUrlParam(name) {
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+			var r = window.location.search.substr(1).match(reg); //匹配目标参数
+			if(r != null) return decodeURI(r[2]);
+			return null; //返回参数值
+		}
+		var a = getUrlParam('?a');
+
+		$(".go_back").click(function() {
+			if(a == 1) {
+				window.location.href = "javascript:history.go(-2);"
+			} else {
+				window.location.href = "javascript:history.back();"
+			}
+		})
+		btn();
+		//下面按钮
+		function btn(){
+			$.ajax({
+				type: "post",
+				url: network + "/Mattrio/CarInterface/CheckButton",
+				dataType: "json",
+				data: {
+					"mikey": $(".table0 tr:eq(0) td:eq(0)").text()
+				},
+				cache: false,
+				crossDomain: true == !(document.all),
+				success: function(data) {
+					$('#btns').html('');
+					$('#btns').html(data.btns);
+					var str = key.Manufacture_CN;
+					if(str.indexOf("奔驰")>=0 || str.indexOf("SMART")>=0){
+						if($("#search").val() == ""){}else{
+							$(".last p:last").removeClass("epcbtn2").addClass("epcbtn");
+						}
+						
+					}
+				}
+			});
+		}
+	</script>
+	<script src="./js/ergodic.js"></script>
+	<script src="../../js/edition.js"></script>
+
+</html>

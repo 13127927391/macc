@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="keywords" content="昂美贸易,数据查询">
+	<meta name="robots" content="all">
+	<meta name="description" content="汽车零配件数据查询">
+	<title>MACC-Magic-EPC查询</title>
+	<link rel="icon" href="../../image/logohead.jpg">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/loading.css">
+	<link rel="stylesheet" type="text/css" href="../../css/upper.css">
+	<!-- <link href="css/fixed_table_rc.css" type="text/css" rel="stylesheet" media="all" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/contentepc_tongyong.css">
+    <!-- <link href="css/jfMagnify-demo-3.css" rel="stylesheet" type="text/css" /> -->
+	<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+        <style>
+            .ft_container table tr th {
+				background-color: #DBEAF9;
+			}
+			.dwrapper tr th{
+				height:24px;
+			}
+			.abc td{
+				background: #ccc;
+			}
+			.contentleft img{
+				width:800px;
+				height:100%;
+			}
+			.contentleft span:hover{
+				cursor: pointer;
+			}
+			.contentleft{
+				margin-left: 3%;
+				height:100%;
+				position: relative;
+			}
+			.breadcrumb{border-bottom: 1px solid #E5E5E5; height:39px;padding-top:15px;}
+			.breadcrumb span{padding:0 5px}
+			.breadcrumb .name2{font-weight: 700;}
+			.page_true{padding:0px 40px;}
+			.page_true button{border:0px;background: #e94740;color:#fff;}
+			#topone,#next{border:0px;background: #e94740;color:#fff;margin-right:10px;}
+			.oecont span{
+				display: inline-block;
+				height:24px;
+			}
+			.oecont span:hover{
+				cursor: pointer;
+				color:red;
+				border-bottom: 1px solid red;
+			}
+        </style>
+</head>
+<body>
+	<!------头部------>
+	<div class="nav clearfix">
+		<div class="nav_left nleft wxcont">
+			<a href="../../index.html" title="返回首页">网站首页</a>&nbsp;&nbsp;
+			<a href="#" class="wxfa">关注微信
+				<img class="wxtop" src="../../image/wx.jpg" alt="wx.jpg">
+			</a>
+		</div>
+		<div class="nav_right nright clearfix">
+			<div>
+				<a href="#" class="divname"><span></span></a>&nbsp;
+				<a href="#" class="divnum">日剩余次数(<span></span>)</a>&nbsp;
+				<a href="../../content/about/in.html">免责条款</a>&nbsp;
+			</div>		
+		</div>
+	</div>
+	<div id="loading" style="display:none;">
+		<p>
+			<img src="../../image/timg.gif">
+		</p>
+	</div>
+
+	<div class="carname clearfix">
+		<div class="block">
+			<a href="../../index.html">首页</a>	
+			<a href="javascript:window.opener=null;window.open('','_self');window.close();">返回上一页</a>
+		</div>
+	</div>
+	
+	<div class="breadcrumb">
+		<span class="name1"></span><span class="c-666 en">&gt;</span><span class="name2 c-666"></span>
+	</div>
+	<div class="cont">
+		<div class="contentleft">
+			
+		</div>
+	</div>
+	<div style="width:1024px;margin:5px auto;text-align:right;">
+		<button id="topone">上一条</button><button id="next">下一条</button>
+	</div>
+	<div id="checkbox">
+		<table>
+			<thead>
+				<tr>
+					<th width="40px;"><p><span class="check_span"><input type="checkbox" id="checkAll" /></span></p></th>
+					<th width="40px;">标号</th>
+					<th>标准名称</th>
+					<th width="350px">原厂名称</th>
+					<th>零件号</th>
+					<th >备注</th>
+					<th>官方价格</th>
+					<th>单车用量</th>
+					<th>启动时间</th>
+					<th>停用时间</th>
+					<th>系列</th>
+				</tr>
+			</thead>
+			<tbody style="text-align: center;">
+			</tbody>
+		</table>
+		<button id="btn">导出数据 <img src="../../image/download.png" alt="download.png"></button>
+	</div>
+	<div class="upper_top">
+		<img src="../../image/upper.png">
+	</div>
+	<div style="text-align: center;color:#333;">
+		<img src="../../image/warning.png" style="width:14px;"> 特别提醒，电子目录版本：<span style="color:red;">2017.05</span> | 4S价版本<span style="color:red;">2017.06</span>
+	</div>
+	<!-- 页脚 -->
+	<div class="footer">
+		<p><span>电话：021-5221 2966</span>|<span>传真：021-5221 2911</span>|<span>备案号：沪ICP备15027426号-2</span>|</p>
+		<p><span>地址：上海市闵行区沪光东路89号福克斯大厦2号楼103B</span></p>
+		<p><span>版权所有：昂美数据</span></p>
+	</div>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="../../js/jquery.cookie.js"></script>
+<script src="./js/content_tongyong_epc.js"></script>
+<script src="js/checkbox.min.js"></script>
+<script>
+	function getBoy(){
+		for(var i = 0;i<$("input").length;i++){
+			$("input")[i].checked = true;
+		}
+	}
+	$(".upper_top").click(function(){
+		$('html, body').animate({scrollTop:0}, 200); 
+	})
+</script>
+</html>

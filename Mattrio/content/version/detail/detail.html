@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="renderer" content="webkit"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="keywords" content="汽车,数据查询">
+	<meta name="robots" content="all">
+	<meta name="description" content="汽车零配件数据查询">
+	<title>产品关联车型</title>
+	<link rel="stylesheet" type="text/css" href="../../../css/loading.css">
+	<link rel="stylesheet" type="text/css" href="jquery.dataTables.min.css">
+	<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+
+		<table id="example" class="display">
+			<thead>
+				<tr class="modaldetailtr">
+					<td>主机厂</td>
+					<td>主机厂</td>
+					<td>销售名称</td>
+					<td>生产年份</td>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+
+	<div id="loading">
+		<p>
+			<img src="../../../image/timg.gif">
+		</p>
+	</div>
+	
+
+
+</body>
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/jquery.cookie.js"></script>
+<script src="jquery.dataTables.min.js"></script>
+<script>
+	if (localStorage) {
+		var network = localStorage.getItem("network");
+	}else{
+		var network = $.cookie("network");
+	}
+
+	var userid = $.cookie("user_id");
+	
+	$("#loading").show();
+	//获取通过url传的参数
+	 function getUrlParam(name) {
+	    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	    if (r != null) return decodeURI(r[2]); return null; //返回参数值
+	}
+	var product_id =getUrlParam('?product_id');
+
+	// $("table").html('<tr class="modaldetailtr"><td colspan="4">适用车型</td></tr><tr class="modaldetailtr"><td>主机厂</td><td>车型</td><td>销售名称</td><td>生产年份</td></tr>');
+	$.ajax({
+		type:"post",
+		url:network+"/Mattrio/OeInterface/queryPrductCars",
+		data:{
+			"product_id":product_id,
+			"userid":userid
+		},
+		dataType:"json",
+		cache: false,
+		crossDomain: true == !(document.all),
+		success:function(data){
+			$("#loading").hide();
+			$.each(data,function(key,value){
+				var $tr = $("<tr></tr>");
+				var $td1 = $("<td></td>").html(value.Manufacture_CN);
+				var $td2 = $("<td></td>").html(value.Vehicle_Name_CN);
+				var $td3 = $("<td></td>").html(value.Name_of_sales);
+				var $td4 = $("<td></td>").html(value.Year_of_production);
+				$td1.appendTo($tr);
+				$td2.appendTo($tr);
+				$td3.appendTo($tr);
+				$td4.appendTo($tr);
+				$tr.appendTo($("tbody"));
+			})
+			$(function () {
+		        $('#example').DataTable({
+		            columns:[
+		                {data:"firstname"},
+		                {data:"lastname"},
+		                {data:"phone"},
+		                {data:"one"}
+		            ]
+		        });
+		    });
+		}
+	})
+
+</script>
+
+</html>

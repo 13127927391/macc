@@ -1,0 +1,26 @@
+#loading{
+	width:300px;
+	height:200px;
+	margin:0 auto;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	position:fixed;
+	top:100px;
+	left:50%;
+	text-align:center;
+	display:none;
+	z-index: 100000;
+}
+#loading p{
+	position: absolute;
+	background:rgba(255,255,255,.7);
+	left:-50%;
+	top:50px;
+	width:300px;
+	height:150px;
+	border-radius: 10px;
+}
+#loading img{
+	width:150px;
+}

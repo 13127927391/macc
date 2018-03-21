@@ -1,0 +1,142 @@
+/* 浮动面板 */
+#floatPanel{background:#f4f4f4;}
+#floatPanel .ctrolPanel{width:36px;height:170px;background:#f4f4f4  no-repeat left top;border:solid 1px #ddd;position:fixed;right:25px;bottom:5%;overflow:hidden;z-index:10000; _position:absolute; /* for IE6 */_top:expression(documentElement.scrollTop + 300);}
+#floatPanel .ctrolPanel a{width:34px;font-size:12px;color:#ff6600;letter-spacing:1px;text-align:center;overflow:hidden;}
+#floatPanel .ctrolPanel .arrow{height:29px;line-height:28px;display:block;margin:1px auto;border-bottom: 1px solid #ccc;}
+
+#floatPanel .ctrolPanel .contact{height:34px;display:block;margin:2px auto;border-bottom: 1px solid #ccc;}
+#floatPanel .ctrolPanel .contact span{line-height:30px;}
+#floatPanel .ctrolPanel .qrcode{height:34px;height:34px;display:block;margin:2px auto;border-bottom: 1px solid #ccc;}
+#floatPanel .ctrolPanel .qrcode span{line-height:30px;display:block;margin:2px auto;height:30px;}
+
+#floatPanel .ctrolPanel .qrcode1{height:34px;display:block;margin:2px auto;border-bottom: 1px solid #ccc;}
+#floatPanel .ctrolPanel .qrcode1 span{line-height:30px;display:block;margin:2px auto;}
+#floatPanel .ctrolPanel img{width:25px;margin-top: 3px;}
+
+#floatPanel .popPanel{width:230px;height:242px;position:fixed;right:70px;top:275px;z-index:100;overflow:hidden;display:none;_position:absolute; /* for IE6 */_top:expression(documentElement.scrollTop + 300); }
+#floatPanel .popPanel .popPanel-inner{width:230px;height:242px;position:relative;overflow:hidden;}
+#floatPanel .popPanel .popPanel-inner .arrowPanel{width:10px;height:240px;position:absolute;right:1px;top:102px;}
+#floatPanel .popPanel .popPanel-inner .arrowPanel .arrow01{width:0;height:0;font-size:0;line-height:0;border-top:10px solid transparent;_border-top:10px solid black;_filter:chroma(color=black);border-right:10px solid transparent;_border-right:10px solid black;_filter:chroma(color=black);border-bottom:10px solid transparent;_border-bottom:10px solid black;_filter:chroma(color=black);border-left:10px solid #ddd;position:absolute;bottom:0;position:absolute;left:2px;top:0;}
+#floatPanel .popPanel .popPanel-inner .arrowPanel .arrow02{width:0;height:0;font-size:0;line-height:0;border-top:10px solid transparent;_border-top:10px solid black;_filter:chroma(color=black);border-right:10px solid transparent;_border-right:10px solid black;_filter:chroma(color=black);border-bottom:10px solid transparent;_border-bottom:10px solid black;_filter:chroma(color=black);border-left:10px solid #fff;position:absolute;bottom:0;position:absolute;left:0;top:0;}
+#floatPanel .popPanel .popPanel-inner .qrcodePanel{width:220px;height:240px;text-align:center;background:#fff;border:solid 1px #ddd;position:absolute;left:0;top:0;overflow:hidden;}
+#floatPanel .popPanel .popPanel-inner .qrcodePanel img{width:200px;border:none;padding:10px 10px 5px 10px;}
+#floatPanel .popPanel .popPanel-inner .qrcodePanel span{font-size:12px;color:#666;line-height:24px;letter-spacing:1px;}
+
+#floatPanel .popPanel1{width:230px;height:242px;position:fixed;right:70px;top:310px;z-index:100;overflow:hidden;display:none;_position:absolute; /* for IE6 */_top:expression(documentElement.scrollTop + 300); }
+#floatPanel .popPanel1 .popPanel-inner{width:230px;height:242px;position:relative;overflow:hidden;}
+#floatPanel .popPanel1 .popPanel-inner1 .arrowPanel1{width:10px;height:240px;position:absolute;right:1px;top:102px;}
+#floatPanel .popPanel1 .popPanel-inner1 .arrowPanel1 .arrow011{width:0;height:0;font-size:0;line-height:0;border-top:10px solid transparent;_border-top:10px solid black;_filter:chroma(color=black);border-right:10px solid transparent;_border-right:10px solid black;_filter:chroma(color=black);border-bottom:10px solid transparent;_border-bottom:10px solid black;_filter:chroma(color=black);border-left:10px solid #ddd;position:absolute;bottom:0;position:absolute;left:2px;top:0;}
+#floatPanel .popPanel1 .popPanel-inner1 .arrowPanel1 .arrow021{width:0;height:0;font-size:0;line-height:0;border-top:10px solid transparent;_border-top:10px solid black;_filter:chroma(color=black);border-right:10px solid transparent;_border-right:10px solid black;_filter:chroma(color=black);border-bottom:10px solid transparent;_border-bottom:10px solid black;_filter:chroma(color=black);border-left:10px solid #fff;position:absolute;bottom:0;position:absolute;left:0;top:0;}
+#floatPanel .popPanel1 .popPanel-inner1 .qrcodePanel1{width:220px;height:240px;text-align:center;background:#fff;border:solid 1px #ddd;position:absolute;left:0;top:0;overflow:hidden;}
+#floatPanel .popPanel1 .popPanel-inner1 .qrcodePanel1 img{width:200px;border:none;padding:10px 10px 5px 10px;}
+#floatPanel .popPanel1 .popPanel-inner1 .qrcodePanel1 span{font-size:12px;color:#666;line-height:24px;letter-spacing:1px;}
+.suggest{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,.8);
+	z-index: 100000;
+	display: none;
+}
+.suggest p{
+	color:red;
+}
+.suggestcont{
+	border:5px solid #ccc;
+	border-radius: 5px;
+	background: #fff;
+	padding: 10px;
+	width:40%;
+	height:300px;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+}
+.suggestcont table{
+	margin:0 auto;
+	margin-top: 20px;
+}
+.suggest td{
+	vertical-align: top;
+	padding: 5px;
+}
+.suggest td span{
+	color:#aaa;
+}
+.suggest td input{
+	width:100%;
+}
+.suggest td textarea{
+	width:100%;
+	height:70px;
+}
+.suggest button{
+	border:1px solid #ccc;
+	width:60px;
+	line-height: 25px;
+}
+.suggest .offbtn{
+	background:#2196f3;
+	color:#fff;
+}
+
+
+.error{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,.5);
+	z-index: 100000;
+	display: none;
+}
+.error p{
+	color:red;
+}
+.errorcont{
+	border:5px solid #ccc;
+	border-radius: 5px;
+	background: #fff;
+	padding: 10px;
+	width:40%;
+	height:280px;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+}
+.errorcont table{
+	margin:0 auto;
+	margin-top: 20px;
+}
+.error td{
+	vertical-align: top;
+	padding: 5px;
+}
+.error td span{
+	color:#aaa;
+}
+.error td input{
+	width:100%;
+}
+.error td textarea{
+	width:90%;
+	height:70px;
+}
+.error button{
+	border:1px solid #ccc;
+	width:60px;
+	line-height: 25px;
+}
+.error .off_btn{
+	background:#2196f3;
+	color:#fff;
+}

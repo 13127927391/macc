@@ -1,0 +1,1 @@
+$("<span>").html("V 2.6.5").appendTo($(".footer p:eq(0)"));

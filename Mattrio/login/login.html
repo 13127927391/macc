@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="keywords" content="51macc,mattrio,昂美贸易">
+		<meta name="robots" content="all">
+		<meta name="description" content="汽车零配件数据查询">
+		<title>MACC-登录</title>
+		<link rel="icon" href="../image/logohead.jpg">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<!-- <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="./css/login.css">
+		<link rel="stylesheet" type="text/css" href="../css/loading.css">
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+		<!------头部------>
+		<div class="nav clearfix">
+			<div class="nav_left">
+				<a href="../index.html" title="返回首页"><img src="../image/logo.png"></a>
+			</div>
+			<div class="nav_right clearfix">
+				<div>
+					<a href="../index.html">返回主页</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 
+			<div class="form-group">
+ 				<label for="inputEmail3" class="col-sm-3 control-label">验证码：</label>
+ 				<div class="col-sm-3">
+ 					<input class="input-text size-L form-control " type="text" placeholder="验证码" id="security"  value="" name="verifyCode">
+ 				</div>
+ 			    <div class="col-sm-6">
+ 			     	<img id="img" src="/Mattrio/authImage"/> 
+     				<a href='#' onclick="javascript:changeImg()">
+     					<label>看不清？</label>
+     				</a>
+ 				</div>
+ 			</div>			
+		 -->
+		 <div class="content">
+		 	<img src="../image/loginbg.png" class="bgimg">
+		 	<div class="contenter">
+		 		<p class="title"><img src="../image/login.png"></p>
+		 		<!-- <p class="mattrio_line">
+		 			<img src="../image/mattrio.png" style="width:70%"><br>
+		 			<img src="../image/line.png">
+		 		</p> -->
+		 		<div class="inp">
+		 			<p><span>用户名</span><input type="text" name="" placeholder="请输入用户名" id="inputEmail3"></p>
+		 			<p><span>密 码</span><input type="password" name="" placeholder="请输入密码" id="inputPassword3"></p>
+		 		</div>
+		 		<div class="inp_">
+		 			<input type="checkbox" class="checkboxinp" checked="checked">记住密码
+		 			<a href="../content/forgotpwd/forgotpwd.html">忘记密码</a>
+		 		</div>
+		 		<button class="btn" id="btn">登 &nbsp; 录</button>
+		 		<button class="zhuce" id="bttn">注 &nbsp; 册</button>
+		 		<img src="../image/third.png" style="width:84%;margin-top:20px;"><br>
+		 		<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxe2b6c778a9d99130&redirect_uri=http%3a%2f%2fwww.51macc.com%3a8080%2fMattrio%2fweixinCore%2fwxRedirect&response_type=code&scope=snsapi_login&state=200#wechat_redirect">
+					<img src="../image/wenx.png" style="width:50px;">
+				</a>
+		 	</div>
+		</div>
+		<div id="loading">
+			<p>
+				<img src="../image/timg.gif">
+			</p>
+		</div>
+		<!--尾部-->
+		</div>
+		<div class="footer">
+			<p><span>电话：021-5221 2966</span>|<span>传真：021-5221 2911</span>|<span>备案号：沪ICP备15027426号-2</span>|</p>
+			<p><span>地址：上海市闵行区沪光东路89号福克斯大厦2号楼103B</span></p>
+			<p><span>版权所有：昂美数据</span></p>
+		</div>
+	</body>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script>
+		var heig = $(window).height() - 61 - 90;
+		if(heig >= 487) {
+			$(".content").css("height", heig);
+		} else {
+			$(".content").css("height", "487");
+		}
+	</script>
+	<script src="./js/login.js"></script>
+	<script src="../js/edition.js"></script>
+</html>

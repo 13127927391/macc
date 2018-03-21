@@ -1,0 +1,423 @@
+.nav{
+	width:100%;
+	height: 60px;
+	margin:0 auto;
+	background-color: #fff;
+	border-bottom:1px solid #E7161A;
+}
+.nav .nav_left{
+	float:left;
+	margin-top: 10px;
+	margin-left: 100px;
+}
+.nav_left img{
+	width:150px;
+}
+.nav .nav_right{
+	float:right;
+}
+.nav .nav_right div{
+	padding:5px;
+	margin-right: 20px;
+}
+.nav .nav_right div a{
+	color:#b20822;
+	font: :15px "微软雅黑";
+	line-height: 50px;
+}
+.nav .nav_right .navrightd{
+	margin-right: 100px;
+}
+.nleft a{
+	color:#b20822;
+	font: :15px "微软雅黑";
+	line-height: 40px;
+}
+.wxcont{
+	position: relative;
+}
+.wxtop{
+	position:absolute;
+	top:40px;
+	left:30px;
+	display: none;
+}
+.wxfa{
+	display: inline-block;
+}
+.wxfa:hover .wxtop{
+	display: block;
+}
+
+/*搜索部分*/
+a{ 
+	color: rgba(255, 255, 255, 0.6);
+	outline: none;
+	text-decoration: none;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+a:hover,a:focus{
+	color:#74777b;
+	text-decoration: none;
+}
+.wrapper {
+	height: 40px;
+	width: 500px;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+	position: absolute;
+	top: 90px;
+	left: 50%;
+	margin-left: -230px;
+	margin-top: 0px;
+}
+.inputbox {
+	box-sizing: border-box;
+	width: 400px;
+	height: 100%;
+	font-size: 18px;
+	background-color: #FFFFFF;
+	border: 1px solid #B20822;
+	border-right: 0;
+	border-radius: 4px 0 0 4px;
+	padding: 10px;
+	float: left;
+	display: block;
+}
+.inputbox:focus{
+	border: 2px solid #B20822;
+}
+.buttom{
+	width:100px;
+	height:40px;
+	border:1px solid #B20822;
+	background-color: #B20822;
+	border-radius:0px 4px 4px 0px;
+	font:20px "微软雅黑";
+	color:#fff;
+	font-weight: 700;
+}
+.buttom:hover{
+	cursor: pointer;
+	background: #CB0824;
+	border: 1px solid #CB0A29;
+}
+input:focus {
+	outline: none;
+}
+.contentwx{
+	position: absolute;
+	top:80px;
+	right:10%;
+}
+.contentwx img{
+	width:50px;
+}
+.contentwx p{
+	color:#000;
+	font: 12px "微软雅黑";
+}
+.content{
+	background: #eee;
+	width:100%;
+	height:95px;
+	border:1px solid #ccc;
+}
+.contentleft{
+	padding-top:30px;
+	padding-left:100px;
+}
+.contentleft img{
+	width:150px;
+}
+/*----*/
+.contheader{
+	width:1028px;
+	margin:0 auto;
+	border-left:1px solid #eaeaea;
+	border-right:1px solid #eaeaea;
+}
+.contheader p{
+	width:171px;
+	float: left;
+	line-height: 30px;
+	margin:0;
+	text-align: center;
+	background: #fafafa;
+}
+.contheader p:hover{
+	cursor: pointer;
+	background: #E51534;
+	color:#fff;
+}
+.contheader .active{
+	background: #E51534;
+	color:#fff;
+	font-size: 16px;
+}
+.table1,.table2,.table3,.table4,.table5{
+	display: none;
+}
+.wrap-nav1 {
+    width: 1028px;
+    padding-left: 20px;
+    height: 70px;
+    margin: 0 auto;
+    border: 1px solid #eaeaea;
+    margin-top: 30px;
+}
+.wrap-nav1 p{
+	float: right;
+	line-height: 30px;
+	width:100px;
+	background: #b20822;
+	text-align: center;
+	margin-top: 20px;
+	margin-right: 5px;
+	color:#fff;
+}
+.wrap-nav1 p:hover{
+	cursor: pointer;
+}
+.wrap-nav1 img{
+	width:64px;
+	height:64px;
+}
+.vin_error{
+	float: right;
+	background: #628845;
+	border:0;
+	color:#fff;
+	margin-top: 20px;
+	margin-right: 5px;
+	line-height: 28px;
+}
+.car-name {
+    font-size: 26px;
+    font-family: "Microsoft YaHei";
+    line-height: 40px;
+    color: #333;
+    margin-top: 12px;
+    vertical-align: middle;
+}
+.mainhead{
+	width:1028px;
+	margin:0 auto;
+}
+.mainhead div{
+	float: left;
+}
+.mainheadimg{
+	padding:5px;
+	border:1px solid #eaeaea;
+	border-right: 0;
+	width:303px;
+	height:323px;
+	padding-top: 50px;
+	/*text-align: right;*/
+}
+.mainheadimg img{
+	width:290PX;
+	height:194px;
+	border:0;
+}
+.mainheadimg button{
+	border:0;
+	background: #d2d2d2;
+	color:#fff;
+}
+.mainhead table{
+	margin:0;
+	height:323px;
+	width:725px;
+}
+.mainhead th,.mainhead td{
+	border:1px solid #ccc;
+}
+.mainhead th{
+	color:#333;
+	background: #fafafa;
+	border: 1px solid #eaeaea;
+	padding-left:10px;
+	vertical-align:middle;
+}
+.mainhead td{
+	color:#333;
+	border: 1px solid #eaeaea;
+	padding-left:10px;
+	vertical-align:middle;
+}
+.mainhead .table2 th,.mainhead .table5 th,.mainhead .table4 th{
+	width:190px;
+}
+.mainhead .table3 th{
+	width:160px;
+}
+.conthide{
+	height:489px;
+}
+
+.conthide{
+	font-size:30px;
+	text-align: center;
+	line-height: 50px;
+}	
+.last{
+	width:640px;
+	margin:30px auto;
+	height:50px;
+}
+.last p{
+	float:left;
+	border:0;
+	width:150px;
+	padding:5px;
+	/*height:50px;*/
+	text-align:center;
+	background-color:#E51534;
+	color:#fff;
+	font:20px "微软雅黑";
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.last p button{
+	background: #E51534;
+	border:0;
+}
+.last p.epcbtn2{
+	background: #d2d2d2;
+}
+.last p:hover{
+	cursor: pointer;
+}
+
+/*=====EPC====*/
+.contout{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,.8);
+	display: none;
+}
+.contepc{
+	text-align: center;
+	width:40%;
+	background: #fff;
+	position:fixed;
+	top:30%;
+	left: 30%;
+}
+.contepc .span{
+	position: absolute;
+	top:0px;
+	right:0px;
+	display: inline-block;
+	width:20px;
+	height: 20px;
+	font-size: 20px;
+	border:1px solid #ccc;
+	line-height: 20px;
+}
+.contepc .span:hover{
+	cursor:pointer;
+}
+.contepc select{
+	width:160px;
+	height: 30px;
+	font-size: 16px;
+	/*border:1px solid red;*/
+	margin: 20px 0px;
+}
+.contepc button{
+	margin-bottom: 15px;
+	border:0;
+	color:#fff;
+	width:70px;
+	line-height: 26px;
+}
+.contbtn{
+	background: #0f9ae0;
+}
+.removebtn{
+	background: #ccc;
+	margin-left: 5px;
+}
+/*=======*/
+
+.footer{
+	width:100%;
+	background-color: #4b4b4b;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.footer p{
+	line-height: 20px;
+	color:#eee;
+	font-size: 12px;
+	margin:0px;
+}
+.footer p span{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+/*=======*/
+.error{
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	top:0px;
+	left: 0px;
+	display: none;
+}
+.errorcont{
+	width:40%;
+	height:260px;
+	background: #fff;
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	padding:5px;
+	border:5px solid #ccc;
+	border-radius: 5px;
+}
+.error h3{
+	line-height: 30px;
+	font-size: 20px;
+	text-align: center;
+}
+.error table{
+	width:100%;
+}
+.error table td{
+	padding:5px;
+	/*text-align: center;*/
+}
+.error table td input{
+	width:90%;
+	line-height: 16px;
+}
+.error button{
+	border:0;
+	line-height: 25px;
+	width:50px;
+	color: #fff;
+}
+.error button:hover{
+	cursor: pointer;
+}
+.offbtn,.off_btn{
+	background: #e94740;
+}
+.onbtn,.on_btn{
+	background: #ccc;
+}

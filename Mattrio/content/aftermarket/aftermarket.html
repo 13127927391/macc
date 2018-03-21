@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="renderer" content="webkit"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="keywords" content="汽车,数据查询">
+	<meta name="robots" content="all">
+	<meta name="description" content="汽车零配件数据查询">
+	<title>MACC-售后品牌</title>
+	<link rel="icon" href="../../image/logohead.jpg">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/loading.css">
+    <link rel="stylesheet" type="text/css" href="./css/aftermarket.css">
+	<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<style>
+		.maince{
+			min-height:600px;
+			background: #fff;
+		}
+	</style>
+</head>
+<body>
+	<!------头部------>
+	<div class="nav clearfix">
+		<div class="nav_left nleft wxcont">
+			<a href="../../index.html">网站首页</a>&nbsp;&nbsp;
+			<a href="#" class="wxfa">关注微信
+				<img class="wxtop" src="../../image/wx.jpg">
+			</a>&nbsp;&nbsp;
+			
+		</div>
+		<div class="nav_right nright clearfix">
+			<div>
+				<a href="#" class="divname"><span></span></a>&nbsp;
+				<a href="#" class="divnum">日剩余次数（<span></span>）</a>&nbsp;
+				<a href="../about/in.html">免责条款</a>&nbsp;
+			</div>
+		</div>
+	</div>
+	
+	<div class="maince">
+		<div class="oenametop">
+			售后品牌
+			<div class="block">
+				<a href="../../index.html">首页</a>	
+				<a href="#" onclick="javascript:history.back();">返回上一页</a>
+			</div>
+		</div>
+	</div>
+	<div id="loading">
+		<p>
+			<img src="../../image/timg.gif">
+		</p>
+	</div>
+
+	<!---------->
+	<div class="error">
+		<div class="errorcont">
+			<h3>产品纠错</h3>
+			<table>
+				<tr>
+					<td>产品编号：</td>
+					<td><input type="text" name="" disabled="disabled" class="oenum"></td>
+				</tr>
+				<tr>
+					<td>产品分类：</td>
+					<td><input type="text" name="" disabled="disabled" class="category_name"></td>
+				</tr>
+				<tr>
+					<td>品类名称：</td>
+					<td><input type="text" name="" disabled="disabled" class="brand_name"></td>
+				</tr>
+				<tr>
+					<td>您认为的产品编号：</td>
+					<td><input type="text" name="" class="new_oenum"></td>
+				</tr>
+				<tr style="text-align: center;">
+					<td colspan="2">
+						<button class="offbtn">提交</button>
+						<button class="onbtn">取消</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!--页脚-->
+	<div class="footer">
+		<p><span>电话：021-5221 2966</span>|<span>传真：021-5221 2911</span>|<span>备案号：沪ICP备15027426号-2</span>|</p>
+		<p><span>地址：上海市闵行区沪光东路89号福克斯大厦2号楼103B</span></p>
+		<p><span>版权所有：昂美数据</span></p>
+	</div>
+</body>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery.cookie.js"></script>
+	<script src="../../js/placeholderTypewriter.js"></script>
+	<script src="./js/aftermarket.js"></script>
+
+
+	<script src="../../static/layer/2.4/layer.js"></script>
+	<script src="../../static/h-ui/js/H-ui.min.js"></script>
+	<script src="../../static/h-ui.admin/js/H-ui.admin.js"></script>
+	<script src="../../static/My97DatePicker/4.8/WdatePicker.js"></script>
+	<script src="../../static/datatables/1.10.0/jquery.dataTables.min.js"></script>
+
+	<script >
+		function car_edit(title, url, id, w, h) {
+			layer_show(title, url, w, h);
+		}
+	</script>
+	<script src="../../js/edition.js"></script>
+</html>

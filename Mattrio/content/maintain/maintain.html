@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="renderer" content="webkit"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="keywords" content="汽车,数据查询">
+	<meta name="robots" content="all">
+	<meta name="description" content="汽车零配件数据查询">
+	<title>MACC-全车件</title>
+	<link rel="icon" href="../../image/logohead.jpg">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/loading.css">
+    <link rel="stylesheet" type="text/css" href="./css/maintain.css">
+	<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+	<!------头部------>
+	<div class="nav clearfix">
+		<div class="nav_left nleft wxcont">
+			<a href="../../index.html">网站首页</a>&nbsp;&nbsp;
+			<a href="#" class="wxfa">关注微信
+				<img class="wxtop" src="../../image/wx.jpg">
+			</a>
+		</div>
+		<div class="nav_right nright clearfix">
+			<div>
+				<a href="#" class="divname"><span></span></a>&nbsp;
+				<a href="#" class="divnum">日剩余次数(<span></span>)</a>&nbsp;
+				<a href="../about/in.html">免责条款</a>&nbsp;
+			</div>		
+		</div>
+	</div>
+	<div id="loading" style="display:none;">
+		<p>
+			<img src="../../image/timg.gif">
+		</p>
+	</div>
+
+	<div class="wrapper">
+		<input class="inputbox" type="text" name="search" id="search" placeholder="配件名称，配件编号(支持通用名称查询，如：龙门架)">
+		<button  class="buttom" id="btn">搜 索</button>
+		<!-- <div class="active">
+			<div id="box">
+				<label for="arrcity"></label><input type="text" name="arrcity" id="arrcity" placeholder="配件名称，配件编号(支持通用名称查询，如：龙门架)" />
+				<div id='suggest' class="ac_results">
+				</div>
+			</div>
+		</div> -->
+	</div>
+	<div class="carname clearfix">
+		<p>
+			当前车型：<span></span>
+		</p>
+		<div class="block">
+			<a href="../../index.html">首页</a>	
+			<a href="#" onclick="javascript:history.back(-1);">返回上一页</a>
+		</div>
+	</div>
+	<div class="content clearfix">
+		<ul class="contenttop clearfix">
+			<li><img src="../../image/fen0.png"> 配件总类</li>
+			<li><img src="../../image/fen1.png"> 配件品类</li>
+			<li><img src="../../image/shezhi.png"> 选择配件</li>
+		</ul>
+		
+		<div class="content1">
+			<p>底盘部分</p>
+			<p>发动机与变速器</p>
+			<p>车身部分</p>
+			<p>电器及照明系统</p>
+			<p>内外饰部分</p>
+			<p>工具</p>
+			<p>辅料项目</p>
+		</div>
+		<div class="content2">
+			
+		</div>
+		<div class="content3">
+			
+		</div>
+	</div>
+
+	<div class="substance">
+		<table>
+			
+		</table>
+	</div>
+	
+<!-- <a href="./oecont/oecont.html"  target="_blank">aaa</a> -->
+
+	<!-- 页脚 -->
+	<div class="footer">
+		<p><span>电话：021-5221 2966</span>|<span>传真：021-5221 2911</span>|<span>备案号：沪ICP备15027426号-2</span>|</p>
+		<p><span>地址：上海市闵行区沪光东路89号福克斯大厦2号楼103B</span></p>
+		<p><span>版权所有：昂美数据</span>
+			<script type="text/javascript">
+				var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cspan id='cnzz_stat_icon_1262355392'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1262355392%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+		</p>
+	</div>
+</body>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/jquery.cookie.js"></script>
+<script src="./js/maintain.js"></script>
+<script type="text/javascript" src="../../js/aircity.js"></script>
+<script type="text/javascript" src="../../js/j.dimensions.js"></script>
+<script type="text/javascript" src="../../js/j.suggest.js"></script>
+<script>
+	$(function(){
+		$("#arrcity").suggest(citys,{hot_list:commoncitys,dataContainer:'#arrcity_3word', attachObject:'#suggest'});
+		$("#city2").suggest(citys,{hot_list:commoncitys,attachObject:"#suggest2"});
+	});
+</script>
+<script src="../../js/edition.js"></script>
+<script src="../../js/cnzz.js"></script>
+</html>

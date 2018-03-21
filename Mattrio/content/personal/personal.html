@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="renderer" content="webkit"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="keywords" content="汽车,数据查询">
+	<meta name="robots" content="all">
+	<meta name="description" content="汽车零配件数据查询">
+	<title>MACC-个人中心</title>
+	<link rel="icon" href="../../image/logohead.jpg">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/loading.css">
+    <link rel="stylesheet" type="text/css" href="./css/personal.css">
+	<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- ----头部---- -->
+	<div class="nav clearfix">
+		<div class="nav_left nleft wxcont">
+			<a href="../../index.html">网站首页</a>&nbsp;&nbsp;
+			<a href="#" class="wxfa">关注微信
+				<img class="wxtop" src="../../image/wx.jpg">
+			</a>&nbsp;&nbsp;	
+		</div>
+		<div class="nav_right nright clearfix">
+			<div>
+				<a href="javascript:history.back();">返回上一页</a>&nbsp;&nbsp;
+				<a href="#" class="outname">退出用户中心</a>&nbsp;
+			</div>
+		</div>
+	</div>
+	<!-- 主体 -->
+	<div class="container-fluid conttop">
+		<div class="container">
+			<p>个人中心</p>
+		</div>
+		
+	</div>
+	<div class="container">
+		<div class="content clearfix">
+			<div class="contentleft">
+				<!-- <p>个人中心</p> -->
+				<ul class="clearfix">
+					<li class="contentleftli pull-left">账号信息</li>
+					<li class=" pull-left">个人资料</li>
+					<li class=" pull-left">修改密码</li>
+					<li class=" pull-left">查询日志</li>
+				</ul>
+			</div>
+			<div class="contentright">
+				<div class="contentright1 active">
+					<!-- <p>会员级别信息</p> -->
+					<table>
+						<tr>
+							<td>用户名：</td>
+							<th class="username"></th>
+						</tr>
+						<tr>
+							<td>电子邮件：</td>
+							<th>12412321@qq.com</th>
+						</tr>
+						<tr>
+							<td>手机号码：</td>
+							<th>13121213121</th>
+						</tr>
+						<tr>
+							<td>日剩余次数：</td>
+							<th class="daydegree"></th>
+						</tr>
+						<tr>
+							<td>总剩余次数：</td>
+							<th>53</th>
+						</tr>
+					</table>
+				</div>
+				<div class="contentright1">
+					<!-- <p>个人信息</p> -->
+					<table>
+						<tr>
+							<td>用户名：</td>
+							<th class="username"></th>
+						</tr>
+						<tr>
+							<td>电子邮件：</td>
+							<th>12412321@qq.com</th>
+						</tr>
+						<tr>
+							<td>手机号码：</td>
+							<th>13121213121</th>
+						</tr>
+					</table>
+				</div>
+				<div class="contentright1">
+					<!-- <p>修改密码</p> -->
+					<table>
+						<tr>
+							<td>用户名：</td>
+							<th class="username">woziji</th>
+						</tr>
+						<tr>
+							<td>登录来源：</td>
+							<th>20</th>
+						</tr>
+						<tr>
+							<td>电话号码：</td>
+							<th>
+								<input type="text" name="" placeholder="请输入您电话号码" id="telinp">
+							</th>
+						</tr>
+						<tr>
+							<td>验证码：</td>
+							<th>
+								<input type="text" name="" placeholder="请输入您的验证码" id="security">
+								<span class='code'>获取验证码</span><span class="codenone"></span>
+							</th>
+						</tr>
+						<tr>
+							<td>新密码：</td>
+							<th>
+								<input type="password" name="" placeholder="请输入您的新密码" id="pwdinp">
+							</th>
+						</tr>
+						<tr>
+							<td>确认新密码：</td>
+							<th>
+								<input type="password" name="" placeholder="确认新密码" id="repwdinp">
+							</th>
+						</tr>
+					</table>
+					<button>提交</button>
+				</div>
+				<div class="contentright2">
+					<!-- <p>VIN码日志</p> -->
+					以下为您最近10次查询记录
+					<table>
+						<tr>
+							<th class="th1">VIN码</th>
+							<th class="th2">日期</th>
+							<th class="th3">管理</th>
+						</tr>
+						<tr>
+							<td>LSVCE43TXD2029718</td>
+							<td>2017-06-07 11:27:39.71</td>
+							<td class="vintd"><a href="#">查看车型信息</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	
+	<!-- 页脚 -->
+	<div class="footer">
+		<p><span>电话：021-5221 2966</span>|<span>传真：021-5221 2911</span>|<span>备案号：沪ICP备15027426号-2</span>|</p>
+		<p><span>地址：上海市闵行区沪光东路89号福克斯大厦2号楼103B</span></p>
+		<p><span>版权所有：昂美数据</span></p>
+	</div>
+</body>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/jquery.cookie.js"></script>
+<script src="./js/personal.js"></script>
+</html>

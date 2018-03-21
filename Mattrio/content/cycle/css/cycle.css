@@ -1,0 +1,292 @@
+.nav{
+	width:100%;
+	height: 60px;
+	margin:0 auto;
+	background-color: #fff;
+	border-bottom:1px solid #E7161A;
+}
+.nav .nav_left{
+	float:left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.nav_left img{
+	width:150px;
+	z-index: 100;
+}
+.nav .nav_right{
+	float:right;
+}
+.nav .nav_right div{
+	padding:5px;
+	margin-right: 20px;
+}
+.nav .nav_right div a{
+	color:#b20822;
+	font: :15px "微软雅黑";
+	line-height: 50px;
+}
+.nav .nav_right .navrightd{
+	margin-right: 100px;
+}
+.nleft a{
+	color:#b20822;
+	font: :15px "微软雅黑";
+	line-height: 40px;
+}
+.wxcont{
+	position: relative;
+}
+.wxtop{
+	position:absolute;
+	top:40px;
+	left:30px;
+	display: none;
+}
+.wxfa{
+	display: inline-block;
+}
+.wxfa:hover .wxtop{
+	display: block;
+}
+/*==============*/
+.cont{
+	min-height: 500px;
+}
+.content{
+	width:1024px;
+	margin:0 auto;
+	font: 16px "微软雅黑";
+	position: relative;
+}
+.content p{
+	margin-top: 30px;
+	font-size: 20px;
+	margin-bottom:10px;
+}
+.content p a{
+	display: inline-block;
+	float: right;
+	background: #b20822;
+	color:#fff;
+	font-size:14px;
+	padding:5px;
+	margin-right: 10px;
+}
+.content div{
+	float: left;
+	width:150px;
+	margin-top: 30px;
+	text-align: center;
+	border:1px solid #B20822;
+	border-right:0;
+	line-height: 40px;
+}
+.content button{
+	border:0;
+	background:#B20822;
+	color:#fff;
+	width:100px;
+	margin-top: 30px;
+	font: 18px/40px "微软雅黑";
+}
+.active{
+	display: none;
+}
+ul{
+	width:150px;
+	border:1px solid #ccc;
+	max-height:300px;
+	overflow: auto;
+	background: #fff;
+}
+ul li{
+	padding-left: 10px;
+	line-height: 25px;
+}
+.year{
+	margin-left: 170px;
+}
+.year:hover,.mouth:hover,.distance:hover,ul li:hover,.content button:hover{
+	cursor:pointer;
+}
+ul li:hover{
+	background: #b20822;
+	color:#fff;
+}
+.content button:hover{
+	background: #E7161A;
+}
+.chooseyear{
+	position:absolute;
+	top:102px;
+	left:170px;
+}
+.choosemouth1{
+	position:absolute;
+	top:102px;
+	left:322px;
+}
+.choosemouth2{
+	position:absolute;
+	top:102px;
+	left:322px;
+	height:180px;
+}
+.choosedistance{
+	position:absolute;
+	top:102px;
+	left:474px;
+}
+.content .distance,.choosedistance{
+	width:200px;
+}
+.cycle{
+	width:1050px;
+	margin:0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.cycle .contentp{
+	margin-left: 15px;
+	margin-right: 20px;
+	padding-left: 10px;
+	font-size: 18px;
+	line-height: 40px;
+	color:#b20822;
+	background: #eaeaea;
+}
+.cyclediv{
+	width:158px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;
+	border:1px solid #ccc;
+	text-align: center;
+}
+/*.cyclediv:hover{
+	border:1px solid red;
+	cursor: pointer;
+}*/
+.cyclediv span{
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	overflow: hidden;
+	font-size: 12px;
+}
+.cyclediv .cyclespan{
+	font-size: 16px;
+	padding-top: 10px;
+}
+.cyclediv img{
+	width:80%;
+	margin-top: 10px;
+	height:83.19px;
+}
+.cycle .cycleimg{
+	width:100%;
+	height:100%;
+	margin:0;
+}
+.price{
+	text-align: right;
+	font-size: 16px;
+	color:#b20822;
+	padding-right: 20px;
+}
+/*==========*/
+.handbook{
+	width:1024px;
+	margin:0 auto;
+	margin-bottom: 30px;
+}
+.handbook p{
+	margin-bottom: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+	color:#b20822;
+	background: #eaeaea;
+}
+.handbook td{
+	border:1px solid #ccc;
+	height:40px;
+}
+.handbookleft{
+	float: left;
+	width:100px;
+}
+.handbookleft td{
+	width:100px;
+	padding-left: 10px;
+	background: #fafafa;
+}
+.handbookright{
+	float: left;
+	overflow: auto;
+	width:924px;
+}
+.handbookright td{
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.handbookright td span{
+	display: inline-block;
+	width:20px;
+	height:20px;
+}
+.handbookrighttd td{
+	background: #fafafa;
+}	
+/*=========*/
+.contentnone{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+	display: none;
+}
+.contentnone p{
+	text-align: left;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	font-size: 20px;
+	line-height: 40px;
+	color:red;
+	background: #eaeaea;
+}
+
+.cyclenone{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+	display: none;
+}
+.cyclenone p{
+	text-align: left;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	font-size: 20px;
+	line-height: 40px;
+	color:red;
+	background: #eaeaea;
+}
+/*=======*/
+
+.footer{
+	width:100%;
+	background-color: #4b4b4b;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.footer p{
+	line-height: 20px;
+	color:#eee;
+	font-size: 12px;
+	margin: 0;
+}
+.footer p span{
+	padding-left:10px;
+	padding-right:10px;
+}

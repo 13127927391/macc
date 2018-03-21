@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="renderer" content="webkit"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="keywords" content="汽车,数据查询">
+	<meta name="robots" content="all">
+	<meta name="description" content="汽车零配件数据查询">
+	<title>MACC-OE信息</title>
+	<link rel="icon" href="../../../image/logohead.jpg">
+	<link rel="stylesheet" type="text/css" href="../../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/loading.css">
+    <link rel="stylesheet" type="text/css" href="./css/oecont.css">
+	<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!------头部------>
+	<div class="nav clearfix">
+		<div class="nav_left nleft wxcont">
+			<a href="../../../index.html">网站首页</a>
+			<a href="#" class="wxfa">关注微信
+				<img class="wxtop" src="../../../image/wx.jpg">
+			</a>
+		</div>
+		<div class="nav_right nright clearfix">
+			<div>
+				<a href="#" class="divname"><span></span></a>
+				<a href="#" class="divnum">日剩余次数(<span></span>)</a>
+				<a href="../../about/in.html">免责条款</a>
+			</div>		
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<input class="inputbox" type="text" name="search" id="search"  list="oelist" placeholder="请输入您要查询的OE号码">
+		<button  class="buttom" id="btn">搜 索</button>
+		<datalist id="oelist">
+		</datalist>
+	</div>
+
+	<div id="loading" style="display: none;">
+		<p>
+			<img src="../../../image/timg.gif">
+		</p>
+	</div>
+
+	<div class="conttopleft">
+		<span class="cont_bg">OE信息</span>
+		<div class="block">
+			<a href="../../../index.html">首页</a>	
+			<a href="javascript:window.opener=null;window.open('','_self');window.close();">返回上一页</a>
+		</div>
+	</div>
+	<div class="content">
+		<ul class="clearfix">
+			
+		</ul>
+		<div class="contenttop">
+			<table>
+				<tr>
+					<th>主类：</th>
+					<td class="td1"></td>
+					<th>子类：</th>
+					<td class="td2"></td>
+				</tr>
+				<tr>
+					<th>别名：</th>
+					<td class="td" colspan="3"></td>
+				</tr>
+				<tr>
+					<th>零配件OE信息：</th>
+					<td class="td3"></td>
+					<th>4S店价格：</th>
+					<td class="td4"></td>
+				</tr>
+				<tr>
+					<th>备注信息：</th>
+					<td class="td5"></td>
+					<th>单车用量：</th>
+					<td class="td6"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="clearfix">
+			<p class="contentp">纠错</p>
+			<!-- <p class="contentp_other">别名</p> -->
+		</div>
+		
+		<div class="contentbottom clearfix">
+			<div class="contentbottom1">
+				<p class="contentbottomp">配件图片</p>
+				<div class="contimg">
+					<button id="image">点击获取图片</button>
+					<div class="cont_img">
+						
+					</div>
+					<div class="cont_i">
+						
+					</div>
+				</div>
+
+			</div>
+			<div class="contentbottom2">
+				<p  class="contentbottomp">适用车型</p>
+				<div class="contentbottom2lg">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contentbrand conttopleft clearfix">
+		<span class="cont_bg">售后品牌</span>
+		<br>
+		<div class="table1">
+			<table>
+				<thead>
+					<tr>
+						<th>品牌</th>
+						<th>产品编码</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+				
+			</table>
+			
+		</div>
+		<div class="table2">
+			<table>
+				<thead>
+					<tr>
+						<th>品牌</th>
+						<th>产品编码</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+				
+			</table>
+		</div>
+	</div>
+	<div class="nocontent">
+		暂无数据
+	</div>
+
+
+	<div class="error">
+		<div class="errorcont">
+			<h3>产品纠错</h3>
+			<table>
+				<tr>
+					<td>OE号码：</td>
+					<td><input type="text" name="" disabled="disabled" class="oenum"></td>
+				</tr>
+				<tr>
+					<td>品类名称：</td>
+					<td><input type="text" name="" disabled="disabled" class="category_name"></td>
+				</tr>
+				<tr>
+					<td>您认为的OE号码：</td>
+					<td><input type="text" name="" class="new_oenum"></td>
+				</tr>
+				<tr style="text-align: center;">
+					<td colspan="2">
+						<button class="offbtn">提交</button>
+						<button class="onbtn">取消</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- 页脚 -->
+	<div class="footer">
+		<p><span>电话：021-5221 2966</span>|<span>传真：021-5221 2911</span>|<span>备案号：沪ICP备15027426号-2</span>|</p>
+		<p><span>地址：上海市闵行区沪光东路89号福克斯大厦2号楼103B</span></p>
+		<p><span>版权所有：昂美数据</span></p>
+	</div>
+</body>
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/jquery.cookie.js"></script>
+<script src="./js/oecont.js"></script>
+<script type="text/javascript">
+	function autoScroll(obj) {
+		$(obj).find("ul").animate({
+			marginTop: "-56px"
+		}, 1000, 'linear', function() {
+			$(this).css({
+				marginTop: "0px"
+			}).find("li:first").appendTo(this);
+		})
+	}
+	$(function() {
+		setInterval('autoScroll(".apple")', 5000);
+		initDataList('oelist');
+	})
+
+	function initDataList(id) {
+		if(localStorage.getItem(id)) {
+			var list = localStorage.getItem(id);
+			list = list.substring(0, list.length - 1);
+			var data = list.split(',');
+			// console.log(data.length);
+			if(data.length >= 10) {
+				for(var i = data.length - 1; i >= data.length - 9; i--) {
+					$('#' + id).append('<option>' + data[i] + '</option>');
+				}
+			} else {
+				for(var i = data.length - 1; i >= 0; i--) {
+					$('#' + id).append('<option>' + data[i] + '</option>');
+				}
+			}
+
+		}
+	}
+</script>
+<script src="../../../js/edition.js"></script>
+</html>

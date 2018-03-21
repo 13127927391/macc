@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="keywords" content="昂美贸易,数据查询">
+		<meta name="robots" content="all">
+		<meta name="description" content="汽车零配件数据查询">
+		<title>MACC-Magic-EPC查询</title>
+		<link rel="icon" href="../../image/logohead.jpg">
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/loading.css">
+		<link rel="stylesheet" type="text/css" href="./css/xiandai_epc.css">
+		<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+		<style>
+			.contentbottom img {
+				width: 170.5px;
+				height: 128.94px;
+			}
+			
+			.row {
+				text-align: center;
+			}
+			.contname{
+				font-size: 20px;
+				font-weight: 700;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!------头部------>
+		<div class="nav clearfix">
+			<div class="nav_left nleft wxcont">
+				<a href="../../index.html" title="返回首页">网站首页</a>&nbsp;&nbsp;
+				<a href="#" class="wxfa">关注微信
+					<img class="wxtop" src="../../image/wx.jpg">
+				</a>
+			</div>
+			<div class="nav_right nright clearfix">
+				<div>
+					<a href="#" class="divname"><span></span></a>&nbsp;
+					<a href="#" class="divnum">日剩余次数(<span></span>)</a>&nbsp;
+					<a href="../../content/about/in.html">免责条款</a>&nbsp;
+				</div>
+			</div>
+		</div>
+		<div id="loading">
+			<p>
+				<img src="../../image/timg.gif">
+			</p>
+		</div>
+
+		<div class="wrapper">
+			<input class="inputbox" type="text" name="search" id="search" placeholder="配件编号">
+			<button class="buttom" id="btn">搜 索</button>
+		</div>
+		<div class="carname clearfix">
+			<div class="block">
+				<a href="../../index.html">首页</a>
+				<a href="#" onclick="javascript:history.back();">返回上一页</a>
+			</div>
+		</div>
+		<div class="cont clearfix">
+			<p class="contname"></p>
+			<div class="content pull-left">
+				<input type="text" name="" class="searchtwo" placeholder="搜索分类名称" style="width: 100%;height: 37px;padding-left: 5px;"><br><button id='searchtwo' class="btn btn-primary">搜索</button> <button id='goback' class="btn btn-danger">返回</button>
+				<div class="content_left">
+					
+				</div>
+			</div>
+
+			<div class="contentbottom pull-right">
+				<!-- <div class="contentback clearfix">
+				<p class="pull-left contentbackleft">附件目录</p>
+				<p class="pull-left contentbackright"></p>
+			</div> -->
+				<div class="row">
+
+				</div>
+			</div>
+		</div>
+
+		<center style="color: #b20822;margin-bottom: 10px;"> 数据来自于网络，所有权归主机厂所有。如有侵犯您的权益，请及时告知。
+		</center>
+
+		<!-- 页脚 -->
+		<div class="footer">
+			<p><span>电话：021-5221 2966</span>|<span>传真：021-5221 2911</span>|<span>备案号：沪ICP备15027426号-2</span>|</p>
+			<p><span>地址：上海市闵行区沪光东路89号福克斯大厦2号楼103B</span></p>
+			<p><span>版权所有：昂美数据</span></p>
+		</div>
+	</body>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery.cookie.js"></script>
+	<script src="./js/xiandai_epc.js"></script>
+
+</html>
